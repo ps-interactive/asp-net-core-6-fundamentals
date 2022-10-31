@@ -7,6 +7,7 @@ namespace BethanysPieShopHRM.Tests
     public class CH08_Tests
     {
         [Fact]
+        [Trait("Category", "Task1")]
         public void CH08_VerifyDbContext()
         {
             var filePath = TestHelpers.GetRootString() + "BethanysPieShopHRM"
@@ -21,6 +22,7 @@ namespace BethanysPieShopHRM.Tests
         }
 
         [Fact]
+        [Trait("Category", "Task2")]
         public void CH08_VerifyDbSets()
         {
             var filePath = TestHelpers.GetRootString() + "BethanysPieShopHRM"
