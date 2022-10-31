@@ -5,6 +5,7 @@ namespace BethanysPieShopHRM.Tests
     public class CH19Tests
     {
         [Fact]
+        [Trait("Category", "Task1")]
         public void CH19_CheckInputAttributes()
         {
             var filePath = TestHelpers.GetRootString() + "BethanysPieShopHRM"
@@ -39,6 +40,7 @@ namespace BethanysPieShopHRM.Tests
         }
 
         [Fact]
+        [Trait("Category", "Task2")]
         public void CH19_CheckFormAttributes()
         {
             var filePath = TestHelpers.GetRootString() + "BethanysPieShopHRM"
