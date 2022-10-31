@@ -7,6 +7,7 @@ namespace BethanysPieShopHRM.Tests
     public class UnitTests
     {
         [Fact]
+        [Trait("Category", "Task1")]
         public void CheckIfEmployeeControllerIsOfTypeController()
         {
             var controller = new EmployeeController();
@@ -15,6 +16,7 @@ namespace BethanysPieShopHRM.Tests
         }
 
         [Fact]
+        [Trait("Category", "Task2")]
         public void GetListOfEmployeesViewTest()
         {
             var controller = new EmployeeController();
