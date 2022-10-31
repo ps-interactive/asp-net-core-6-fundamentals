@@ -1,0 +1,17 @@
+rules:
+- id: untitled_rule
+  pattern: |
+      var builder = WebApplication.CreateBuilder(args);
+      ...
+      builder.Services.AddDefaultIdentity<IdentityUser>()
+          .AddEntityFrameworkStores<BethanysPieShopHRMDbContext>();
+      ...
+      var app = builder.Build();
+      ...
+      app.UseAuthentication();
+      app.UseAuthorization();
+      ...
+      app.Run();
+  message: <pass>
+  languages: [csharp]
+  severity: INFO
