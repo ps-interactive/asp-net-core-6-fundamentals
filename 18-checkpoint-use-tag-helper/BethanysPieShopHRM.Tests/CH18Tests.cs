@@ -5,6 +5,7 @@ namespace BethanysPieShopHRM.Tests
     public class CH18Tests
     {
         [Fact]
+        [Trait("Category", "Task1")]
         public void CH18_VerifyViewImports()
         {
             var filePath = TestHelpers.GetRootString() + "BethanysPieShopHRM"
@@ -20,6 +21,7 @@ namespace BethanysPieShopHRM.Tests
         }
 
         [Fact]
+        [Trait("Category", "Task2")]
         public void CH16_VerifyIndex()
         {
             var filePath = TestHelpers.GetRootString() + "BethanysPieShopHRM"
