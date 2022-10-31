@@ -1,0 +1,11 @@
+rules:
+- id: untitled_rule
+  pattern: |
+      [HttpPost]
+      public IActionResult AddEmployee(Employee employee)
+      {
+        return View(employee);
+      }
+  message: <pass>
+  languages: [csharp]
+  severity: INFO

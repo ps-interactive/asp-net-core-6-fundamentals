@@ -1,0 +1,10 @@
+rules:
+- id: untitled_rule
+  pattern: |
+      app.MapControllerRoute(
+          name: "default", 
+          pattern: "{controller=Home}/{action=Index}/{id:int?}");
+      app.Run();
+  message: <pass>
+  languages: [csharp]
+  severity: INFO

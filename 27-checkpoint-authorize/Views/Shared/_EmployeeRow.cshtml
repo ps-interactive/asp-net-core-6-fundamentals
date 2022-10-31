@@ -1,0 +1,8 @@
+﻿@model Employee
+
+<tr>
+    <td>@Model.EmployeeId</td>
+    <td>@Model.FirstName</td>
+    <td>@Model.LastName</td>
+    <td><a asp-action="Details" asp-controller="Employee" asp-route-id="@Model.EmployeeId">Details</a></td>
+</tr>

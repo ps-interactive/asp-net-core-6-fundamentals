@@ -1,0 +1,16 @@
+rules:
+- id: untitled_rule
+  pattern: |
+      public class EmployeeRepository : IEmployeeRepository
+      {
+        private readonly BethanysPieShopHRMDbContext _context;
+        public EmployeeRepository(BethanysPieShopHRMDbContext context)
+        {
+          _context = context;
+        }
+        ...
+      }
+  message: <pass>
+  languages: [csharp]
+  severity: INFO
+

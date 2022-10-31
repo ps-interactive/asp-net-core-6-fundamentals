@@ -1,0 +1,11 @@
+rules:
+- id: untitled_rule
+  pattern: |
+      [Authorize]
+      public class EmployeeController : Controller
+      {
+        ...
+      }
+  message: <pass>
+  languages: [csharp]
+  severity: INFO

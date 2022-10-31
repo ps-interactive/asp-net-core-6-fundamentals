@@ -1,0 +1,19 @@
+rules:
+- id: untitled_rule
+  pattern: |
+      var builder = WebApplication.CreateBuilder(args);
+      ...
+      builder.Services.AddRazorPages();
+      builder.Services.AddServerSideBlazor();
+      ...
+      var app = builder.Build();
+      ...
+      app.UseAuthorization();
+      app.MapRazorPages();
+      app.MapBlazorHub();
+      app.MapFallbackToPage("/app/{*catchall}", "/App/Index");
+      ...
+      app.Run();
+  message: <pass>
+  languages: [csharp]
+  severity: INFO

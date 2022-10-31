@@ -1,0 +1,11 @@
+rules:
+- id: untitled_rule
+  pattern: |
+      public class EmployeeController : Controller
+      {
+        private readonly IEmployeeRepository _employeeRepository;
+        ...
+      }
+  message: <pass>
+  languages: [csharp]
+  severity: INFO

@@ -1,0 +1,17 @@
+﻿@*@using BethanysPieShopHRM.Models
+@model List<Employee>
+
+@{
+    Layout = "_Layout";
+}
+
+<table>
+    @foreach (var item in Model)
+    {
+       <partial name="_EmployeeRow" model="item" />
+    }
+
+</table>*@
+
+
+<vc:employee-list  />

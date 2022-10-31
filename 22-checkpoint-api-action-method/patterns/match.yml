@@ -1,0 +1,23 @@
+rules:
+- id: untitled_rule
+  pattern: |
+      [Route("api/[controller]")]
+      public class SearchController : Controller
+      {
+        ...
+      
+        [HttpGet]
+        public IActionResult GetAllEmployees()
+        {
+          ...
+        }
+      
+        [HttpGet("{id}")]
+        public IActionResult GetById(int id)
+        {
+          ...
+        }
+      }
+  message: <pass>
+  languages: [csharp]
+  severity: INFO

@@ -1,0 +1,10 @@
+﻿
+@model List<Employee>
+
+<table>
+    @foreach (var item in Model)
+    {
+        <partial name="_EmployeeRow" model="item" />
+    }
+
+</table>

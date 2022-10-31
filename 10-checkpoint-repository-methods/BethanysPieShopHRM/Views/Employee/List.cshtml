@@ -1,0 +1,18 @@
+﻿@using BethanysPieShopHRM.Models
+@model List<Employee>
+
+@{
+    Layout = "_Layout";
+}
+
+<table>
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>@item.EmployeeId</td>
+            <td>@item.FirstName</td>
+            <td>@item.LastName</td>
+        </tr>
+    }
+
+</table>

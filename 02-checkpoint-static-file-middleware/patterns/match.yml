@@ -1,0 +1,11 @@
+rules:
+- id: untitled_rule
+  pattern: |
+      app.UseHttpsRedirection();
+      ...
+      app.UseStaticFiles();
+      ...
+      app.UseRouting();
+  message: <pass>
+  languages: [csharp]
+  severity: INFO
