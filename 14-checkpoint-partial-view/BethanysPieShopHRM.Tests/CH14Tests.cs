@@ -5,6 +5,7 @@ namespace BethanysPieShopHRM.Tests
     public class CH14Tests
     {
         [Fact]
+        [Trait("Category", "Task1")]
         public void CH14_VerifyEmployeeRowFile()
         {
             var filePath = TestHelpers.GetRootString() + "BethanysPieShopHRM"
@@ -22,6 +23,7 @@ namespace BethanysPieShopHRM.Tests
         }
 
         [Fact]
+        [Trait("Category", "Task2")]
         public void CH14_VerifyUsePartialView()
         {
             var filePath = TestHelpers.GetRootString() + "BethanysPieShopHRM"
