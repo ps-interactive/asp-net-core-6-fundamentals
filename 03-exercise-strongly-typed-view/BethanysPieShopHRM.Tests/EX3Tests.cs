@@ -7,6 +7,7 @@ namespace BethanysPieShopHRM.Tests
     public class EX3Tests
     {
         [Fact]
+        [Trait("Category", "Task1")]
         public void EX3_VerifyIndexViewExists()
         {
             var filePath = TestHelpers.GetRootString() + "BethanysPieShopHRM"
@@ -18,6 +19,7 @@ namespace BethanysPieShopHRM.Tests
         }
 
         [Fact]
+        [Trait("Category", "Task2")]
         public void EX3_VerifyIndexView()
         {
             var filePath = TestHelpers.GetRootString() + "BethanysPieShopHRM"
