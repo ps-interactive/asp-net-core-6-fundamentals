@@ -5,6 +5,7 @@ namespace BethanysPieShopHRM.Tests
     public class EX05Tests
     {
         [Fact]
+        [Trait("Category", "Task1")]
         public void EX05_VerifyIndex()
         {
             var filePath = TestHelpers.GetRootString() + "BethanysPieShopHRM"
@@ -26,6 +27,7 @@ namespace BethanysPieShopHRM.Tests
         }
 
         [Fact]
+        [Trait("Category", "Task1")]
         public void EX05_VerifyDetail()
         {
             var filePath = TestHelpers.GetRootString() + "BethanysPieShopHRM"
@@ -46,6 +48,7 @@ namespace BethanysPieShopHRM.Tests
         }
 
         [Fact]
+        [Trait("Category", "Task2")]
         public void EX05_VerifyLayout()
         {
             var filePath = TestHelpers.GetRootString() + "BethanysPieShopHRM"
