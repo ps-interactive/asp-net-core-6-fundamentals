@@ -7,6 +7,7 @@ namespace BethanysPieShopHRM.Tests
     public class EX09Tests
     {
         [Fact]
+        [Trait("Category", "Task1")]
         public void EX09_VerifyValidationAttributes()
         {
             var questionType = typeof(Question);
@@ -46,6 +47,7 @@ namespace BethanysPieShopHRM.Tests
         }
 
         [Fact]
+        [Trait("Category", "Task2")]
         public void EX09_VerifyValidationSummary()
         {
             var filePath = TestHelpers.GetRootString() + "BethanysPieShopHRM"
