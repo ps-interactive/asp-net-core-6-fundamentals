@@ -7,6 +7,7 @@ namespace BethanysPieShopHRM.Tests
     public class EX06Tests
     {
         [Fact]
+        [Trait("Category", "Task1")]
         public void EX06_VerifyEmailTagHelper()
         {
             var filePath = TestHelpers.GetRootString() + "BethanysPieShopHRM"
@@ -36,6 +37,7 @@ namespace BethanysPieShopHRM.Tests
         }
 
         [Fact]
+        [Trait("Category", "Task2")]
         public void EX06_VerifyEmailTagHelperUsage()
         {
             var filePath = TestHelpers.GetRootString() + "BethanysPieShopHRM"
