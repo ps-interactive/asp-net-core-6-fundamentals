@@ -1,0 +1,11 @@
+rules:
+- id: untitled_rule
+  pattern: |
+      [Authorize]
+      public class CountryController : Controller
+      {
+        ...
+      }
+  message: <pass>
+  languages: [csharp]
+  severity: INFO

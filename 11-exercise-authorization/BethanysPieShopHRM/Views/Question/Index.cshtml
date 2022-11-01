@@ -1,0 +1,28 @@
+﻿@using BethanysPieShopHRM.Models
+@model Question
+
+
+<form asp-action="Index" method="post" role="form">
+    <div asp-validation-summary="All" class="text-danger"></div>
+
+    <div>
+        <label asp-for="Title" class="form-label"></label>
+        <input asp-for="Title" class="form-control" />
+        <span asp-validation-for="Title" class="text-danger"></span>
+
+    </div>
+    <div>
+        <label asp-for="Message" class="form-label"></label>
+        <input asp-for="Message" class="form-control" />
+        <span asp-validation-for="Message" class="text-danger"></span>
+
+    </div>
+    <div>
+        <label asp-for="Email" class="form-label"></label>
+        <input asp-for="Email" class="form-control" />
+        <span asp-validation-for="Email" class="text-danger"></span>
+
+    </div>
+    
+    <input type="submit" class="btn btn-secondary" value="Send question" />
+</form>

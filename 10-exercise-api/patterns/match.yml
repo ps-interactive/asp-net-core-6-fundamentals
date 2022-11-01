@@ -1,0 +1,11 @@
+rules:
+- id: untitled_rule
+  pattern: |
+      [Route("api/[controller]")]
+      public class SearchController : Controller
+      {
+        ...
+      }
+  message: <pass>
+  languages: [csharp]
+  severity: INFO

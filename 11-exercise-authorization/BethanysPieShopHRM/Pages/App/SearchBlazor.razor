@@ -1,0 +1,32 @@
+﻿@page "/app/search"
+@page "/app"
+
+<h3>Search country</h3>
+
+<div>
+    <input @bind-value="SearchText"
+           @bind-value:event="oninput"
+           placeholder="Search by country name"
+           @onkeyup="Search" />
+</div>
+
+
+@if (!FilteredCountries.Any())
+{
+    <p>Nothing to show, sorry...</p>
+    @if (SearchText.Length < 3)
+    {
+        <p>Make sure to enter at least 3 characters to search!</p>
+    }
+}
+else
+{
+    @foreach (var country in FilteredCountries)
+    {
+        <div>
+            @country.CountryId
+            @country.CountryName
+        </div>
+    }
+}
+
