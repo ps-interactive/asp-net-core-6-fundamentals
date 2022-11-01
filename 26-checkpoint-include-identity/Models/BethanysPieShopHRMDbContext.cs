@@ -4,7 +4,7 @@ using System.Diagnostics.Metrics;
 
 namespace BethanysPieShopHRM.Models
 {
-    public class BethanysPieShopHRMDbContext : DbContext
+    public class BethanysPieShopHRMDbContext : IdentityDbContext
     {
         public BethanysPieShopHRMDbContext(DbContextOptions<BethanysPieShopHRMDbContext> options) : base(options)
         {

@@ -14,7 +14,8 @@ builder.Services.AddDbContext<BethanysPieShopHRMDbContext>(options => {
         builder.Configuration["ConnectionStrings:BethanysPieShopHrmDbContextConnection"]);
 });
 
-
+builder.Services.AddDefaultIdentity<IdentityUser>()
+    .AddEntityFrameworkStores<BethanysPieShopHRMDbContext>();
 
 builder.Services.AddRazorPages();
 builder.Services.AddServerSideBlazor();
@@ -34,6 +35,8 @@ app.UseStaticFiles();
 
 app.UseRouting();
 
+app.UseAuthentication();
+app.UseAuthorization();
 
 app.MapRazorPages();
 app.MapBlazorHub();

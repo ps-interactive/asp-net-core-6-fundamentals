@@ -13,7 +13,8 @@ builder.Services.AddDbContext<BethanysPieShopHRMDbContext>(options => {
         builder.Configuration["ConnectionStrings:BethanysPieShopHrmDbContextConnection"]);
 });
 
-
+builder.Services.AddRazorPages();
+builder.Services.AddServerSideBlazor();
 
 var app = builder.Build();
 
@@ -32,9 +33,15 @@ app.UseRouting();
 
 app.UseAuthorization();
 
+app.MapRazorPages();
+app.MapBlazorHub();
+
+app.MapFallbackToPage("/app/{*catchall}", "/App/Index");
 
 app.MapControllerRoute(
     name: "default", 
     pattern: "{controller=Home}/{action=Index}/{id:int?}");
+
+
 
 app.Run();

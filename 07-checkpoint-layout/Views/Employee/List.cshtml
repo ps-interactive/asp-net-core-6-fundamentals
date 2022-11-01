@@ -1,0 +1,22 @@
+﻿@using BethanysPieShopHRM.ViewModels
+
+@{
+    Layout = "_Layout";
+}
+
+
+@model EmployeeListViewModel
+
+<h1>@Model.EmployeeCategoryType</h1>
+
+<table>
+    @foreach (var item in Model.Employees)
+    {
+        <tr>
+            <td>@item.EmployeeId</td>
+            <td>@item.FirstName</td>
+            <td>@item.LastName</td>
+        </tr>
+    }
+
+</table>

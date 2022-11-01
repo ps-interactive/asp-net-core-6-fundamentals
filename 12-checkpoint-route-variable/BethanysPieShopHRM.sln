@@ -3,9 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.3.32901.215
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BethanysPieShopHRM", "BethanysPieShopHRM\BethanysPieShopHRM.csproj", "{B09508B3-DAEC-48BC-BCE6-D23C502D99C1}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BethanysPieShopHRM.Tests", "BethanysPieShopHRM.Tests\BethanysPieShopHRM.Tests.csproj", "{4874F11D-EB15-4C52-B7B8-D8037FA94162}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BethanysPieShopHRM", "BethanysPieShopHRM.csproj", "{01880837-41EC-4814-959C-923934A2421D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -13,14 +11,10 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{B09508B3-DAEC-48BC-BCE6-D23C502D99C1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{B09508B3-DAEC-48BC-BCE6-D23C502D99C1}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{B09508B3-DAEC-48BC-BCE6-D23C502D99C1}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{B09508B3-DAEC-48BC-BCE6-D23C502D99C1}.Release|Any CPU.Build.0 = Release|Any CPU
-		{4874F11D-EB15-4C52-B7B8-D8037FA94162}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{4874F11D-EB15-4C52-B7B8-D8037FA94162}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{4874F11D-EB15-4C52-B7B8-D8037FA94162}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{4874F11D-EB15-4C52-B7B8-D8037FA94162}.Release|Any CPU.Build.0 = Release|Any CPU
+		{01880837-41EC-4814-959C-923934A2421D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{01880837-41EC-4814-959C-923934A2421D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{01880837-41EC-4814-959C-923934A2421D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{01880837-41EC-4814-959C-923934A2421D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

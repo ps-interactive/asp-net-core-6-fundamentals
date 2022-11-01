@@ -1,0 +1,35 @@
+﻿@model Employee
+
+<form asp-action="AddEmployee" method="post" role="form">
+
+    <div asp-validation-summary="All" class="text-danger"></div>
+
+    <div>
+        <div>
+            <div>
+                <label asp-for="FirstName" class="form-label"></label>
+                <input asp-for="FirstName" class="form-control" />
+            </div>
+
+            <div>
+                <label asp-for="LastName" class="form-label"></label>
+                <input asp-for="LastName" class="form-control" />
+            </div>
+
+            <div>
+                <label asp-for="Email" class="form-label"></label>
+                <input asp-for="Email" class="form-control" />
+            </div>
+
+            <div>
+                <label asp-for="City" class="form-label"></label>
+                <input asp-for="City" class="form-control" />
+            </div>
+        </div>
+    </div>
+
+    <div>
+        <input type="submit" value="Save employee" />
+    </div>
+
+</form>

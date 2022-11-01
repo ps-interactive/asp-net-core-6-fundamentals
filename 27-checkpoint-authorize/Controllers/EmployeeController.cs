@@ -4,6 +4,7 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace BethanysPieShopHRM.Controllers
 {
+    [Authorize]
     public class EmployeeController : Controller
     {
         private readonly IEmployeeRepository _employeeRepository;

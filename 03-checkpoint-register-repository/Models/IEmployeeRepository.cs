@@ -1,6 +1,4 @@
-﻿using System.IO.Pipelines;
-
-namespace BethanysPieShopHRM.Models
+﻿namespace BethanysPieShopHRM.Models
 {
     public interface IEmployeeRepository
     {
