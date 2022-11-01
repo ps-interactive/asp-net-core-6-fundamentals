@@ -10,6 +10,7 @@ namespace BethanysPieShopHRM.Tests
     public class EX07Tests
     {
         [Fact]
+        [Trait("Category", "Task1")]
         public void EX07_VerifyViewComponent()
         {
             var filePath = TestHelpers.GetRootString() + "BethanysPieShopHRM"
@@ -85,6 +86,7 @@ namespace BethanysPieShopHRM.Tests
         }
 
         [Fact]
+        [Trait("Category", "Task2")]
         public void EX07_VerifyViewComponentView()
         {
             var filePath = TestHelpers.GetRootString() + "BethanysPieShopHRM"
@@ -103,6 +105,7 @@ namespace BethanysPieShopHRM.Tests
         }
 
         [Fact]
+        [Trait("Category", "Task3")]
         public void EX07_VerifyViewComponentUsage()
         {
             var filePath = TestHelpers.GetRootString() + "BethanysPieShopHRM"
