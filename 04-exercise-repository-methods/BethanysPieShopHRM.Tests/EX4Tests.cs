@@ -12,6 +12,7 @@ namespace BethanysPieShopHRM.Tests
     public class EX4Tests
     {
         [Fact]
+        [Trait("Category", "Task1")]
         public void EX4_VerifyCountryRepository()
         {
             var filePath = TestHelpers.GetRootString() + "BethanysPieShopHRM"
@@ -96,6 +97,7 @@ namespace BethanysPieShopHRM.Tests
         }
 
         [Fact]
+        [Trait("Category", "Task2")]
         public void EX4_VerifyCountryController()
         {
             var filePath = TestHelpers.GetRootString() + "BethanysPieShopHRM"
