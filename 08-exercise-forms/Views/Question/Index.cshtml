@@ -1,0 +1,21 @@
+﻿@using BethanysPieShopHRM.Models
+@model Question
+
+
+<form asp-action="Index" method="post" role="form">
+
+    <div>
+        <label asp-for="Title" class="form-label"></label>
+        <input asp-for="Title" class="form-control" />
+    </div>
+    <div>
+        <label asp-for="Message" class="form-label"></label>
+        <input asp-for="Message" class="form-control" />
+    </div>
+    <div>
+        <label asp-for="Email" class="form-label"></label>
+        <input asp-for="Email" class="form-control" />
+    </div>
+
+    <input type="submit" value="Send question" />
+</form>

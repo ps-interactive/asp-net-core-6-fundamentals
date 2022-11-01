@@ -1,0 +1,20 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<title>Bethany's Pie Shop HRM</title>
+	<base href="/" />
+
+</head>
+<body>
+	<h1><a asp-controller="Home">Welcome to Bethany's Pie Shop HRM</a></h1>
+	<h3><a asp-controller="Country" asp-action="Index">Manage countries</a></h3>
+	<h3><a asp-controller="Question" asp-action="Index">Ask a question</a></h3>
+
+	<partial name="_LoginPartial" />
+
+	<div>
+		@RenderBody()
+		@RenderSection("Scripts", required: false)
+	</div>
+</body>
+</html>
