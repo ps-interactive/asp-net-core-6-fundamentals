@@ -14,6 +14,5 @@ namespace BethanysPieShopHRM.Tests
             Assert.IsAssignableFrom<Controller>(controller);
         }
 
-
     }
 }
