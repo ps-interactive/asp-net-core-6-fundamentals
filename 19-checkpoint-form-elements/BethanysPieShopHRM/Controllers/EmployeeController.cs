@@ -27,10 +27,5 @@ namespace BethanysPieShopHRM.Controllers
             return View();
         }
 
-        [HttpPost]
-        public IActionResult AddEmployee(Employee employee)
-        {
-            return View(employee);
-        }
     }
 }

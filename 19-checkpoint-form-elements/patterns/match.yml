@@ -2,9 +2,9 @@ rules:
 - id: untitled_rule
   pattern: |
       [HttpPost]
-      public IActionResult AddEmployee(Employee employee)
+      public IActionResult AddEmployee(Employee $A)
       {
-        return View(employee);
+        return View($A);
       }
   message: <pass>
   languages: [csharp]
