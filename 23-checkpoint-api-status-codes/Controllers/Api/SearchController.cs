@@ -26,7 +26,7 @@ namespace BethanysPieShopHRM.Controllers.Api
         {
             var employee = _employeeRepository.GetEmployeeById(id); 
 
-            if (employee!=null)
+            if (employee==null)
                 return NotFound();
 
             return Ok(_employeeRepository.GetEmployeeById(id));
