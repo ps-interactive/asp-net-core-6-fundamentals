@@ -5,7 +5,9 @@ VisualStudioVersion = 17.3.32922.545
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BethanysPieShopHRM", "BethanysPieShopHRM\BethanysPieShopHRM.csproj", "{84745BFF-C7BE-49B6-B46D-EF680C0E1CDE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BethanysPieShopHRM.Tests", "BethanysPieShopHRM.Tests\BethanysPieShopHRM.Tests.csproj", "{7BDF2F98-B120-47F6-AABE-7E9A15BCA60C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BethanysPieShopHRM.Tests", "BethanysPieShopHRM.Tests\BethanysPieShopHRM.Tests.csproj", "{7BDF2F98-B120-47F6-AABE-7E9A15BCA60C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BethanysPieShopHRM.Tests2", "BethanysPieShopHRM.Tests2\BethanysPieShopHRM.Tests2.csproj", "{69EDB973-E587-4A26-B0A6-32B0EFF5EA75}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{7BDF2F98-B120-47F6-AABE-7E9A15BCA60C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7BDF2F98-B120-47F6-AABE-7E9A15BCA60C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7BDF2F98-B120-47F6-AABE-7E9A15BCA60C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{69EDB973-E587-4A26-B0A6-32B0EFF5EA75}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{69EDB973-E587-4A26-B0A6-32B0EFF5EA75}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{69EDB973-E587-4A26-B0A6-32B0EFF5EA75}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{69EDB973-E587-4A26-B0A6-32B0EFF5EA75}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

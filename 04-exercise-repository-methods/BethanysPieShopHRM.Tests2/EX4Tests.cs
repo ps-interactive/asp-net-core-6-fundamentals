@@ -11,20 +11,22 @@ namespace BethanysPieShopHRM.Tests
 {
     public class EX4Tests
     {
+        
+
         [Fact]
-        [Trait("Category", "Task1")]
-        public void EX4_VerifyCountryRepository()
+        [Trait("Category", "Task2")]
+        public void EX4_VerifyCountryController()
         {
             var filePath = TestHelpers.GetRootString() + "BethanysPieShopHRM"
-                                                       + Path.DirectorySeparatorChar + "Models"
-                                                       + Path.DirectorySeparatorChar + "CountryRepository.cs";
+                                                       + Path.DirectorySeparatorChar + "Controllers"
+                                                       + Path.DirectorySeparatorChar + "CountryController.cs";
 
-            Assert.True(File.Exists(filePath), "`CountryRepository.cs` should exist in the Models folder.");
+            Assert.True(File.Exists(filePath), "`CountryController.cs` should exist in the Controllers folder.");
 
             var doc = new HtmlDocument();
             doc.Load(filePath);
 
-            Assert.Contains("private readonly BethanysPieShopHRMDbContext", doc.Text);
+            Assert.Contains("private readonly ICountryRepository", doc.Text);
 
             var options = new DbContextOptionsBuilder<BethanysPieShopHRMDbContext>()
                 .UseInMemoryDatabase(databaseName: "BethanysPieShopHRM")
@@ -33,7 +35,6 @@ namespace BethanysPieShopHRM.Tests
             // Insert seed data into the database using one instance of the context
             using (var context = new BethanysPieShopHRMDbContext(options))
             {
-                context.Database.EnsureDeleted();
                 var countries = context.Countries;
                 context.Countries.RemoveRange(countries);
 
@@ -73,30 +74,19 @@ namespace BethanysPieShopHRM.Tests
             using (var context = new BethanysPieShopHRMDbContext(options))
             {
                 CountryRepository countryRepository = new CountryRepository(context);
+                var controller = new CountryController(countryRepository);
 
-                var countries = countryRepository.AllCountries.ToList();
-                Assert.Equal(5, countries.Count);
-                Assert.Equal(1, countries[0].CountryId);
-                Assert.Equal(2, countries[1].CountryId);
-                Assert.Equal(3, countries[2].CountryId);
-                Assert.Equal(4, countries[3].CountryId);
-                Assert.Equal(5, countries[4].CountryId);
-            }
+                var countriesIActionResult = controller.Index();
+                var countriesViewResult = countriesIActionResult as ViewResult;
+                Assert.Equal(5, ((countriesViewResult!.Model as IEnumerable<Country>)!.ToList()).Count);
+                var countries = ((countriesViewResult!.Model as IEnumerable<Country>)!).ToList();
 
-            // Use a clean instance of the context to run the test
-            using (var context = new BethanysPieShopHRMDbContext(options))
-            {
-                CountryRepository countryRepository = new CountryRepository(context);
-
-                var country = countryRepository.GetCountryById(1);
-                Assert.NotNull(country);
-                Assert.Equal("Belgium", country.CountryName);
-
-                var country1 = countryRepository.GetCountryById(8);
-                Assert.Null(country1);
+                Assert.Equal(1, countries![0].CountryId);
+                Assert.Equal(2, countries![1].CountryId);
+                Assert.Equal(3, countries![2].CountryId);
+                Assert.Equal(4, countries![3].CountryId);
+                Assert.Equal(5, countries![4].CountryId);
             }
         }
-
-        
     }
 }
