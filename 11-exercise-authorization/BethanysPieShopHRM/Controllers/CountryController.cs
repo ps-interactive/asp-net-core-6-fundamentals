@@ -4,7 +4,7 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace BethanysPieShopHRM.Controllers
 {
-    [Authorize]
+    
     public class CountryController : Controller
     {
         private readonly ICountryRepository _countryRepository;
