@@ -15,6 +15,8 @@ namespace BethanysPieShopHRM.Tests
             // Insert seed data into the database using one instance of the context
             using (var context = new BethanysPieShopHRMDbContext(options))
             {
+                context.Database.EnsureDeleted();
+
                 context.Employees.Add(new Employee
                 {
                     BirthDate = new DateTime(1989, 3, 11),
@@ -75,12 +77,13 @@ namespace BethanysPieShopHRM.Tests
             // Insert seed data into the database using one instance of the context
             using (var context = new BethanysPieShopHRMDbContext(options))
             {
+                context.Database.EnsureDeleted();
                 context.Employees.Add(new Employee
                 {
                     BirthDate = new DateTime(1989, 3, 11),
                     City = "Brussels",
                     Email = "bethany@bethanyspieshop.com",
-                    EmployeeId = 1,
+                    EmployeeId = 3,
                     FirstName = "Bethany",
                     LastName = "Smith",
                     PhoneNumber = "324777888773",
@@ -89,7 +92,7 @@ namespace BethanysPieShopHRM.Tests
                     Comment = "Lorem Ipsum",
                     Category = new Category
                     {
-                        CategoryId = 1,
+                        CategoryId = 3,
                         CategoryName = "Management"
                     }
                 });
@@ -101,8 +104,8 @@ namespace BethanysPieShopHRM.Tests
             using (var context = new BethanysPieShopHRMDbContext(options))
             {
                 EmployeeRepository employeeRepository = new EmployeeRepository(context);
-                Employee? employee = employeeRepository.GetEmployeeById(1);
-                Employee? employee2 = employeeRepository.GetEmployeeById(2);
+                Employee? employee = employeeRepository.GetEmployeeById(3);
+                Employee? employee2 = employeeRepository.GetEmployeeById(4);
 
                 Assert.NotNull(employee);
                 Assert.Null(employee2);
