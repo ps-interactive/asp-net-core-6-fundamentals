@@ -42,7 +42,7 @@ namespace BethanysPieShopHRM.Tests
 
             var pattern2 = @"@foreach\s*?[(]\s*?(var|Country)\s*?item\s*?in\s*?Model[)]\s*?{\s*?<\s*?[tT][rR]\s*?>\s*?\s*?\s*?<\s*?[tT][dD]\s*?>\s*?@item.CountryId\s*?<\/\s*?[tT][dD]\s*?>\s*?\s*?\s*?<\s*?[tT][dD]\s*?>\s*?@item.CountryName\s*?<\/\s*?[tT][dD]\s*?>\s*?\s*?\s*?<\/\s*?[tT][rR]\s*?>\s*?\s*?}";
             var rgx2 = new Regex(pattern2);
-            Assert.True(rgx.IsMatch(doc.Text), "`Index.cshtml does not appear to contain a `table` with a `foreach` loop that creates rows and columns for the `Countries`.");
+            Assert.True(rgx2.IsMatch(doc.Text), "`Index.cshtml does not appear to contain a `table` with a `foreach` loop that creates rows and columns for the `Countries`.");
         }
     }
 }
